@@ -19,7 +19,7 @@ cd css-study
 npm install
 ```
 
-1. 開発サーバを起動します。
+4. 開発サーバを起動します。
 ```bash
 npm run dev
 ```
