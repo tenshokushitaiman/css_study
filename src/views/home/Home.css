@@ -1,0 +1,11 @@
+.nav__items{
+  display: flex;
+  flex-direction: row;
+  row-gap: 0.4rem;
+
+}
+
+.nav__item {
+  padding: 0 .2rem;
+  font-size: 1.2rem;
+}
