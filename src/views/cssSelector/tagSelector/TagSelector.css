@@ -1,0 +1,29 @@
+h1 {
+    color: blue;
+    font-size: 24px;
+  }
+
+.combinationContainer > article {
+  margin-bottom: 5rem;
+}
+
+#myId{
+  color:yellow;
+  background-color: blue;
+}
+
+p, .highlight{
+  background: blue;
+  color: yellow;
+}
+
+.parent .childItem{
+  background: blue;
+  color: yellow;
+}
+
+.parent > .child {
+  background: blue;
+  color: yellow;
+}
+
