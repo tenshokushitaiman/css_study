@@ -24,4 +24,4 @@ work.code-workspace
 *.njsproj
 *.sln
 *.sw?
-./build/
+build
