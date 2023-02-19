@@ -1,31 +1,70 @@
 import { useState } from 'react'
 import { Routes, Route } from "react-router-dom"
-import '@views/home/Home.css'
+import styles from './Home.module.css'
 import App from '@views/app/App'
-import {TagSelector, IdSelector, CombinationSelector} from '@views/cssSelector/tagSelector/TagSelector'
+import { TagSelector, IdSelector, CombinationSelector } from '@views/cssSelector/tagSelector/TagSelector'
+import { BoxBlock } from '@views/box/block/block'
+
+
+
 
 function Home() {
-  const [count, setCount] = useState(0)
+  const [isOpen, setIsOpen] = useState(false);
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
 
+  const handleToggle = () => {
+    setIsOpen(!isOpen)
+  }
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
   return (
     <div className="Home">
       <header>
-        <nav>
-          <ul className='nav__items'>
-          <li className='nav__item'><a href="/">home</a></li>
-          <li className='nav__item'><a href="/app">app</a></li>
-          <li className='nav__item'><a href="/chapter2/tagSelector">chapter2_tagSelector</a></li>
-          <li className='nav__item'><a href="/chapter2/idSelector">chapter2_idSelector</a></li>
-          <li className='nav__item'><a href="/chapter2/combinationSelector">chapter2_combinationSelector</a></li>
+        <button onClick={handleToggle}>リンク</button>
+        <dialog open={isOpen} onClose={handleClose}>
+        <article className={styles.dialog}>
+          <section >
+            <h1>home</h1>
+            <nav>
+              <ul className={styles.nav__items}>
+                <li className={styles.nav__item}><a href="/">home</a></li>
+                <li className={styles.nav__item}><a href="/app">app</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section>
+            <h1>chapter2</h1>
+            <nav>
+              <ul className={styles.nav__items}>
+                <li className={styles.nav__item}><a href="/chapter2/tagSelector">tagSelector</a></li>
+                <li className={styles.nav__item}><a href="/chapter2/idSelector">idSelector</a></li>
+                <li className={styles.nav__item}><a href="/chapter2/combinationSelector">combinationSelector</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section>
+            <h1>chapter3</h1>
+            <nav>
+              <ul>
+                <li><a href="/chapter3/Block">block</a></li>
+              </ul>
+            </nav>
+          </section>
+        </article>
+        </dialog>
 
-          </ul>
-        </nav>
       </header>
       <Routes>
         <Route path='/app' element={<App />}></Route>
-        <Route path='/chapter2/tagSelector' element={<TagSelector/>}></Route>
-        <Route path='/chapter2/idSelector' element={<IdSelector/>}></Route>
-        <Route path='/chapter2/combinationSelector' element={<CombinationSelector/>}></Route>
+        <Route path='/chapter2/tagSelector' element={<TagSelector />}></Route>
+        <Route path='/chapter2/idSelector' element={<IdSelector />}></Route>
+        <Route path='/chapter2/combinationSelector' element={<CombinationSelector />}></Route>
+
+        <Route path='/chapter3/block' element={<BoxBlock/>}></Route>
       </Routes>
     </div>
   )
