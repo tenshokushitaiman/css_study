@@ -82,6 +82,10 @@ function BoxSizing(){
     <article>
       <h1>box-sizing</h1>
       <section>
+        <h2>使い分け</h2>
+        <div>レスポンシブデザインをするとき、width, heightを%指定するので、border-boxを使うとサイズ調整がしやすい!</div>
+        </section>
+      <section>
         <h2>border-box</h2>
         <div>border-boxではwidth, heightの値は border + padding + content の大きさになる</div>
         <div className={style.borderBox}></div>
