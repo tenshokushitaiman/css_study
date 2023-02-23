@@ -32,6 +32,34 @@ function BoxBlock() {
     </div>
   )
 }
+
+function OtherBlock() {
+  return (
+    <article >
+      <section>
+        <h1>その他のdisplayの設定値</h1>
+        <section>
+          <h2>display: table, table-row, table-cell</h2>
+          <div className={style.tableContainer}>
+            <div className={style.table}>
+              <div className={style.row}>
+                <div className={style.cell}>1</div>
+                <div className={style.cell}>2</div>
+              </div>
+              <div className={style.row}>
+                <div className={style.cell}>1</div>
+                <div className={style.cell}>2</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+    </article>
+  )
+
+}
 export {
   BoxBlock
+  , OtherBlock
 }

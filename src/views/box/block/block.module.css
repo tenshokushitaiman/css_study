@@ -28,7 +28,9 @@
   .inline-container {
     background-color: #f1f1f1;
     padding: 20px;
+    line-height: 3.0;
   }
+  
   
   .inline-element {
     display: inline;
@@ -36,4 +38,28 @@
     margin-right: 5%;
     padding: 10px;
   }
+  
+  .tableContainer {
+    text-align: center;
+  }
+
+  .table {
+    display: table;
+    margin: 0 auto;
+  }
+
+
+  .row {
+    display: table-row;
+  }
+ 
+  .cell {
+    display: table-cell;
+    border-bottom: 1px solid black;
+    padding: 0 2rem;
+  }
+  
+  
+  
+  
   
