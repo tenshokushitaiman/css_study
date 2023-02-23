@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom"
 import styles from './Home.module.css'
 import App from '@views/app/App'
 import { TagSelector, IdSelector, CombinationSelector } from '@views/cssSelector/tagSelector/TagSelector'
-import { BoxBlock, OtherBlock } from '@views/box/block/block'
+import { BoxBlock, OtherBlock, BoxSizing } from '@views/box/block/block'
 
 
 
@@ -52,6 +52,7 @@ function Home() {
               <ul>
                 <li><a href="/chapter3/Block">block, inline, inline-blockの違い</a></li>
                 <li><a href="/chapter3/otherBlock">その他のdisplayの設定値</a></li>
+                <li><a href="/chapter3/boxSizing">box-sizing</a></li>
               </ul>
             </nav>
           </section>
@@ -67,6 +68,8 @@ function Home() {
 
         <Route path='/chapter3/block' element={<BoxBlock/>}></Route>
         <Route path='/chapter3/otherBlock' element={<OtherBlock/>}></Route>
+        <Route path='/chapter3/boxSizing' element={<BoxSizing/>}></Route>
+
       </Routes>
     </div>
   )

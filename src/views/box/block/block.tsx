@@ -76,7 +76,26 @@ function OtherBlock() {
   )
 
 }
+
+function BoxSizing(){
+  return (
+    <article>
+      <h1>box-sizing</h1>
+      <section>
+        <h2>border-box</h2>
+        <div>border-boxではwidth, heightの値は border + padding + content の大きさになる</div>
+        <div className={style.borderBox}></div>
+      </section>
+      <section>
+        <h2>content-box (初期値)</h2>
+        <div>content-boxではwidth, heightの値は contentの大きさになる</div>
+        <div className={style.contentBox}></div>
+      </section>
+    </article>
+  )
+}
 export {
   BoxBlock
   , OtherBlock
+  , BoxSizing
 }
