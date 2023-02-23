@@ -39,8 +39,8 @@
     padding: 10px;
   }
   
-  .tableContainer {
-    text-align: center;
+  .otherBlockContainer > section {
+    margin: 2rem auto;
   }
 
   .table {
@@ -60,6 +60,13 @@
   }
   
   
-  
+  .list {
+    display: block;
+    list-style: circle inside;
+  }
+
+  .list > .listItem{
+    display: list-item;
+  }
   
   

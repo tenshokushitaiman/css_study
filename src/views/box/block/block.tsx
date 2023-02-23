@@ -35,12 +35,29 @@ function BoxBlock() {
 
 function OtherBlock() {
   return (
-    <article >
+    <article className={style.otherBlockContainer}>
+      <h1>その他のdisplayの設定値</h1>
       <section>
-        <h1>その他のdisplayの設定値</h1>
-        <section>
-          <h2>display: table, table-row, table-cell</h2>
-          <div className={style.tableContainer}>
+        <h2>display: table, table-row, table-cell</h2>
+        <div className={style.tableContainer}>
+          <div className={style.table}>
+            <div className={style.row}>
+              <div className={style.cell}>1</div>
+              <div className={style.cell}>2</div>
+            </div>
+            <div className={style.row}>
+              <div className={style.cell}>1</div>
+              <div className={style.cell}>2</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>display: list-item</h2>
+        <div className={style.list}>
+          <div className={style.listItem}>list-itemを使うと ul liタグを使用するより柔軟にデザインできる</div>
+          <div className={style.listItem}>アクセシビリティの観点から通常は ul liタグを用いるのが望ましい</div>
+          <div className={style.listItem}>
             <div className={style.table}>
               <div className={style.row}>
                 <div className={style.cell}>1</div>
@@ -52,7 +69,7 @@ function OtherBlock() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </section>
 
     </article>
