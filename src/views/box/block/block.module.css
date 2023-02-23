@@ -1,0 +1,39 @@
+.block-container {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .block-element {
+    display: block;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .inline-block-container {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .inline-block-element {
+    display: inline-block;
+    width: 45%;
+    height: 200px;
+    background-color: #ccc;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .inline-container {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .inline-element {
+    display: inline;
+    background-color: #ccc;
+    margin-right: 5%;
+    padding: 10px;
+  }
+  
